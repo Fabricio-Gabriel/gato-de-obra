@@ -1,0 +1,168 @@
+main{
+    width: 100vw;
+    height: 700px;
+    background-color: #1E201F;
+    display: flex;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+
+        .bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url(../public/ft-van.jpg) no-repeat top fixed;
+            background-size: cover;
+            opacity: 0.05;
+            z-index: 4;
+        }
+
+        .main-textos{
+            margin-top: -10%;
+
+            @media screen and (min-width: 540px) {
+              margin-top: -120px;
+            }
+
+            h1{
+                font-size: 2.4em;
+                font-family: Gotham Narr;
+                color: #fffffa;
+                text-align: center;
+
+                @media screen and (min-width: 414px) {
+                  font-size: 2.4em;
+                  text-align: start;
+                }
+
+                @media screen and (min-width: 540px) {
+                  font-size: 3em;
+                }
+
+                @media screen and (min-width: 768px) {
+                  font-size: 3.6em;
+                }
+                
+            }
+
+            p{
+                font-size: .8em;
+                font-family: Source Sans Pro;
+                color: #b6b6b6;
+                text-align: center;
+
+                @media screen and (min-width: 540px) {
+                  font-size: 1em;
+                }
+
+                @media screen and (min-width: 768px) {
+                  font-size: 1.3em;
+                }
+            }
+        }
+
+        .main-buttons{
+            display: flex;
+            margin-top: 30px;
+            width: 260px;
+            justify-content: space-between;
+            position: relative;
+            z-index: 10;
+
+            @media screen and (min-width: 540px) {
+              width: 315px;
+            }
+            
+            .main-button {
+                padding: .6em 1em;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                transition: all 1000ms;
+                font-size: 14px;
+                position: relative;
+                z-index: 10;
+                overflow: hidden;
+                outline: 2px solid #fff;
+                background-color: #1E201F;
+                font-family: Gotham Narr;
+                cursor: pointer;
+
+                @media screen and (min-width: 540px) {
+                  padding: .8em 1em;
+                  font-size: 18px;
+                }
+              }
+
+              .main-button:hover {
+                color: #1E201F;
+                transform: scale(1.1);
+                outline: 2px solid #646464;
+                box-shadow: 4px 5px 17px -4px #404241;
+              }
+              
+              .main-button::before {
+                content: "";
+                position: absolute;
+                left: -50px;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background-color: #ffffff;
+                transform: skewX(45deg);
+                z-index: -1;
+                transition: width 1000ms;
+              }
+              
+              .main-button:hover::before {
+                width: 250%;
+              }
+            
+        }
+
+        .arrow{
+            position: absolute;
+            display: flex;
+            width: 60px;
+            height: 75px;
+            justify-content: center;
+            bottom: 150px;
+      
+            &:before {
+              content: '';
+              width: 2px;
+              height: 45px;
+              display: block;
+              position: absolute;
+              bottom: 30px;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              background: #fff;
+              animation: lineDown 1.5s linear 1.5s infinite;
+              transform-origin: top center;
+           }
+      
+            img {
+              width: 16px;
+              height: 10px;
+              display: block;
+              position: absolute;
+              bottom: 25px;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              opacity: 1;
+              animation: arrowDown 1.5s linear 1.5s infinite;
+            }
+          }
+    }
+}
