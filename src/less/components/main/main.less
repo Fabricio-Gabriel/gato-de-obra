@@ -11,40 +11,97 @@ main {
   z-index: 5;
 
   .logo-img {
-    width: 900px;
-    height: 200px;
-    margin-left: 40px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    //background-color: aqua;
+
+    @media screen and (min-width: 709px){
+      height: auto;
+      width: auto;
+      margin-right: 40px;
+    }
+
+    img {
+      width: 100vw;
+      height: auto;
+      
+
+      @media screen and (min-width: 709px){
+        height: auto;
+        width: auto;
+      }
+
+    }
   }
 
   .txt-logo {
-    font-family: "Briem Hand", cursive;
-    font-weight: 500;
-    font-size: 2.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #f58634;
+    margin-right: 15px;
 
     p {
-      margin-left: 20px;
-      margin-bottom: 10px;
+      font-family: "Briem Hand", cursive;
+      font-weight: 500;
+      font-size: 1.4rem;
+      margin-left: 4px;
+
+      @media screen and (min-width: 395px){
+        font-size: 1.8rem;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+      }
+
+      @media screen and (min-width: 695px){
+        font-size: 2.8rem;
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
     }
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 25px;
+      height: 25px;
       animation: rotation infinite 1s 0s;
+
+      @media screen and (min-width: 395px){
+        width: 35px;
+        height: 35px;
+        animation: rotation infinite 1s 0s;
+      }
+
+      @media screen and (min-width: 695px){
+        width: 50px;
+        height: 50px;
+        animation: rotation infinite 1s 0s;
+      }
     }
   }
 
   .email {
+    width: 80vw;
     font-family: "Jost", sans-serif;
     font-size: 1.2rem;
     margin-top: 100px;
     text-align: center;
 
+    @media screen and (min-width: 450px){
+      width: auto;
+    }
+
     p {
+      font-size: 1rem;
       font-weight: 400;
+
+      @media screen and (min-width: 695px){
+        font-size: 1.2rem;
+      }
+
     }
 
     a {
