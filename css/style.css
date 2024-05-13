@@ -322,11 +322,26 @@ table {
   font-family: Source Sans Pro;
   src: url(../public/fonts/SourceSansPro-Bold.ttf);
 }
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-color: aqua;
+  margin: 0 auto;
+}
+main .home {
+  background-color: red;
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+}
 header {
   width: 100vw;
   height: 60px;
   display: flex;
   box-shadow: 5px 5px 20px #d7d7d7;
+  margin-bottom: 30px;
 }
 header .contain-nav {
   display: flex;
@@ -376,7 +391,6 @@ body {
   overflow-x: hidden;
   transition: 0.2s;
   background-color: white;
-  overflow: hidden;
 }
 .navbar.fixed {
   position: fixed;
