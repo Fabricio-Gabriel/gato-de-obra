@@ -322,118 +322,54 @@ table {
   font-family: Source Sans Pro;
   src: url(../public/fonts/SourceSansPro-Bold.ttf);
 }
-main {
+header {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: transparent;
+  height: 60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  z-index: 5;
+  box-shadow: 5px 5px 20px #d7d7d7;
 }
-main .logo-img {
+header .contain-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+header .contain-nav .logo {
   width: auto;
   height: auto;
+  margin-left: 40px;
+}
+header .contain-nav .logo img {
+  height: 50px;
+}
+header .contain-nav nav {
+  width: 750px;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  margin-right: 30px;
-}
-@media screen and (min-width: 709px) {
-  main .logo-img {
-    height: auto;
-    width: auto;
-    margin-right: 40px;
-  }
-}
-main .logo-img img {
-  width: 100vw;
-  height: auto;
-}
-@media screen and (min-width: 709px) {
-  main .logo-img img {
-    height: auto;
-    width: auto;
-  }
-}
-main .txt-logo {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  color: #f58634;
-  margin-right: 15px;
 }
-main .txt-logo p {
-  font-family: "Briem Hand", cursive;
-  font-weight: 500;
-  font-size: 1.4rem;
-  margin-left: 4px;
+header .contain-nav nav ul {
+  display: flex;
+  gap: 30px;
 }
-@media screen and (min-width: 395px) {
-  main .txt-logo p {
-    font-size: 1.8rem;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-  }
-}
-@media screen and (min-width: 695px) {
-  main .txt-logo p {
-    font-size: 2.8rem;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-}
-main .txt-logo img {
-  width: 25px;
-  height: 25px;
-  animation: rotation infinite 1s 0s;
-}
-@media screen and (min-width: 395px) {
-  main .txt-logo img {
-    width: 35px;
-    height: 35px;
-    animation: rotation infinite 1s 0s;
-  }
-}
-@media screen and (min-width: 695px) {
-  main .txt-logo img {
-    width: 50px;
-    height: 50px;
-    animation: rotation infinite 1s 0s;
-  }
-}
-main .email {
-  width: 80vw;
-  font-family: "Jost", sans-serif;
-  font-size: 1.2rem;
-  margin-top: 100px;
-  text-align: center;
-}
-@media screen and (min-width: 450px) {
-  main .email {
-    width: auto;
-  }
-}
-main .email p {
-  font-size: 1rem;
-  font-weight: 400;
-}
-@media screen and (min-width: 695px) {
-  main .email p {
-    font-size: 1.2rem;
-  }
-}
-main .email a {
+header .contain-nav nav ul li a {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  color: var(--secondary-color);
   transition: all 0.2s ease-in-out 0s;
 }
-main .email a:hover {
-  color: #f05209;
+header .contain-nav nav ul li a:hover {
+  color: #F58634;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+}
+header .menu .sanduiche {
+  height: 20px;
+  display: none;
 }
 body {
   width: 100vw;
@@ -455,83 +391,4 @@ body {
 }
 .overflow-toggle {
   overflow-y: hidden;
-}
-.circle-1,
-.circle-2 {
-  width: 70vw;
-  height: 70vw;
-  background: #000;
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  background: #f58634;
-  background: radial-gradient(circle, #f58634 14%, #ffffff 67%);
-}
-.circle-1 {
-  top: -20%;
-  left: -20%;
-}
-@media screen and (min-width: 540px) and (min-height: 720px) {
-  .circle-1 {
-    top: -30%;
-    left: -30%;
-  }
-}
-@media screen and (min-width: 625px) {
-  .circle-1 {
-    top: -30%;
-    left: -30%;
-  }
-}
-@media screen and (min-width: 738px) {
-  .circle-1 {
-    top: -35%;
-    left: -35%;
-  }
-}
-@media screen and (min-width: 890px) {
-  .circle-1 {
-    top: -45%;
-    left: -45%;
-  }
-}
-@media screen and (min-width: 900px) and (min-height: 1000px) {
-  .circle-1 {
-    top: -30%;
-    left: -30%;
-  }
-}
-.circle-2 {
-  bottom: -20%;
-  right: -20%;
-}
-@media screen and (min-width: 540px) and (min-height: 720px) {
-  .circle-2 {
-    bottom: -30%;
-    right: -30%;
-  }
-}
-@media screen and (min-width: 625px) {
-  .circle-2 {
-    bottom: -30%;
-    right: -30%;
-  }
-}
-@media screen and (min-width: 738px) {
-  .circle-2 {
-    bottom: -35%;
-    right: -35%;
-  }
-}
-@media screen and (min-width: 890px) {
-  .circle-2 {
-    bottom: -45%;
-    right: -45%;
-  }
-}
-@media screen and (min-width: 900px) and (min-height: 1000px) {
-  .circle-2 {
-    bottom: -30%;
-    right: -30%;
-  }
 }
