@@ -327,6 +327,7 @@ main {
   justify-content: center;
   width: 100%;
   height: 700px;
+  background-color: #F58634;
   background: url('../public/bg-construcao.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -334,10 +335,91 @@ main {
   margin: 0 auto;
 }
 main .home {
-  background-color: red;
+  display: flex;
   width: 100%;
   max-width: 1600px;
   height: 100%;
+}
+main .home .txt-home {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #00000011;
+  padding: 40px;
+  box-sizing: border-box;
+}
+main .home .txt-home h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+main .home .txt-home .p-home {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+main .home .txt-home .p-home p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+main .home .txt-home .btn-home {
+  width: 200px;
+  height: 80px;
+  font-size: 1.4rem;
+  background-color: #F58634;
+  border: 2px solid #000000;
+  color: #000000;
+  transition: all 0.2s ease-in-out 0s;
+  font-weight: 600;
+}
+main .home .txt-home .btn-home:hover {
+  cursor: pointer;
+  color: #F58634;
+  background-color: #000000;
+}
+main .home .img-home {
+  width: 50%;
+  height: 100%;
+}
+main .home .img-home .swiper {
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  position: relative;
+  z-index: 3;
+  border-radius: 16px 0 0 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  main .home .img-home .swiper {
+    display: block;
+  }
+}
+main .home .img-home .swiper .swiper-wrapper {
+  height: 100%;
+  width: 90%;
+}
+@media screen and (min-width: 1200px) {
+  main .home .img-home .swiper .swiper-wrapper {
+    width: 100%;
+  }
+}
+main .home .img-home .swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .home .img-home .swiper .swiper-wrapper .swiper-slide img {
+  height: 100%;
+  width: 100%;
 }
 header {
   width: 100vw;
