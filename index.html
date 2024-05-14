@@ -9,6 +9,10 @@
     />
     <title>Gato de obra</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -48,18 +52,16 @@
         
         <div class="img-home">
 
-          <div class="swiper" data-anime="right">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <div class="swiper-slide slide-1">
-                <img src="./public/p1.jpg" alt="imagem de pedreiros" />
-              </div>
-              <div class="swiper-slide slide-2">
-                <img src="./public/p2.jpg" alt="imagem de pedreiros" />
-              </div>
-              <div class="swiper-slide slide-3">
-                <img src="./public/p3.jpg" alt="imagem de pedreiros" />
-              </div>
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
             </div>
+            <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
           </div>
 
@@ -70,6 +72,6 @@
     <script src="src/input.js"></script>
     <script src="src/index.js"></script>
     <script src="src/waypoint.js"></script>
-    <script src="src/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -54,3 +54,6 @@
 // // var elementDate = document.querySelector('.year-date');
 // // elementDate.innerText = anoAtual;
 
+const swiper = new Swiper(".swiper", {
+    
+});
