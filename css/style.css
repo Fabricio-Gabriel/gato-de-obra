@@ -382,21 +382,36 @@ main .home .txt-home .btn-home:hover {
   color: #F58634;
   background-color: #000000;
 }
-main .home .img-home {
+main .home .swiper {
   width: 50%;
-  height: 100%;
-}
-main .home .img-home .swiper {
-  width: 100%;
   height: 100%;
   position: relative;
   z-index: 3;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-main .home .img-home .swiper .swiper-wrapper {
+main .home .swiper .swiper-wrapper {
   height: 100%;
   width: 100%;
+}
+main .home .swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .home .swiper .swiper-wrapper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+}
+main .home .swiper .swiper-pagination-bullet {
+  background-color: #1f1f1f;
+  width: 14px;
+  height: 14px;
+}
+main .home .swiper .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  border: 2px solid #f3f3f3;
 }
 header {
   width: 100vw;

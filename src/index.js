@@ -1,4 +1,7 @@
-// const body = document.querySelector("body")
+const { Autoplay, Pagination, Navigation } = require("swiper/modules");
+
+import Swiper from '/swiper/bundle';
+import '/swiper/css/bundle';
 
 // window.addEventListener('scroll', function(){
 //   const navbar = document.querySelector('.navbar');
@@ -53,8 +56,36 @@
 
 // // var elementDate = document.querySelector('.year-date');
 // // elementDate.innerText = anoAtual;
-
+console.log("inicializando swiper");
 const swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+    },
+    slidesPerView: 1,
+    loop: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next"
+    },
+
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+        prev: {
+            shadow: true,
+            translate: ["-20%", 0, -1]
+        },
+
+        next: {
+            translate: ["100%", 0, 0]
+        }
+    }
 });
+
