@@ -1,114 +1,108 @@
 header {
     width: 100vw;
-    height: 60px;
+    height: 80px;
     //background-color: #c92c2c;
     display: flex;
     box-shadow: 5px 5px 20px #d7d7d7;
-    margin-bottom: 30px;
-    
+  
     .contain-nav {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+  
+      padding-right: 0;
+      padding-left: 0;
+  
+      @media screen and (min-width: 1220px) {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-between; 
-
-        padding-right: 0;
-        padding-left: 0;
-
-        @media screen and (min-width: 1220px) {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: space-between; 
-
-            padding-right: 40px;
-            padding-left: 40px;
-
-        }
-
-        .logo {
-            margin-left: 15px;
-
-            @media screen and (min-width: 1220px) {
-                width: auto;
-                height: auto;
-                margin-left: 40px;
-            }
-            
-            img {
-                height: 50px;
-            }
-    
-        }
-    
-        nav {
-            //background-color: aqua;
-            display: none;
-
-            @media screen and (min-width: 1050px) {
-                margin-right: 15px;
-                width: 750px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-            }
-
-            @media screen and (min-width: 1220px) {
-                width: 750px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-            }
-            
-           
-    
-            ul {
-                display: flex;
-                gap: 30px;
-    
-                li {
-    
-                    a {
-                        text-decoration: none;
-                        font-family: "Jost", sans-serif;
-                        color: var(--secondary-color);
-                        transition: all .2s ease-in-out 0s;
-    
-                        &:hover {
-                            color: #F58634;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-
-    
-
-    .menu {
+        justify-content: space-between;
+  
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+  
+      .logo {
+        margin-left: 15px;
+        height: 100%;
         display: flex;
         align-items: center;
-        
-        .sanduiche {
-            display: block;
-            height: 20px;
-            margin-right: 15px;
-
-            @media screen and (min-width: 360px){
-                display: block;
-                height: 20px;
-                margin-right: 40px; 
-            }
-
-            @media screen and (min-width: 1050px){
-                height: 20px;
-                display: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
+  
+        @media screen and (min-width: 1220px) {
+          width: auto;
+          margin-left: 40px;
         }
+  
+        img {
+          height: 80%;
+        }
+      }
+  
+      nav {
+        //background-color: aqua;
+        display: none;
+  
+        @media screen and (min-width: 1050px) {
+          margin-right: 15px;
+          width: 750px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+  
+        @media screen and (min-width: 1220px) {
+          width: 750px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+  
+        ul {
+          display: flex;
+          gap: 30px;
+  
+          li {
+            a {
+              text-decoration: none;
+              font-family: "Jost", sans-serif;
+              color: var(--secondary-color);
+              transition: all 0.2s ease-in-out 0s;
+  
+              &:hover {
+                color: #f58634;
+              }
+            }
+          }
+        }
+      }
     }
-}
+  
+    .menu {
+      display: flex;
+      align-items: center;
+  
+      .sanduiche {
+        display: block;
+        height: 20px;
+        margin-right: 15px;
+  
+        @media screen and (min-width: 360px) {
+          display: block;
+          height: 20px;
+          margin-right: 40px;
+        }
+  
+        @media screen and (min-width: 1050px) {
+          height: 20px;
+          display: none;
+        }
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }

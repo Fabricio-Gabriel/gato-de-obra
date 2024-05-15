@@ -1,7 +1,7 @@
-const { Autoplay, Pagination, Navigation } = require("swiper/modules");
+// const { Autoplay, Pagination, Navigation } = require("swiper/modules");
 
-import Swiper from '/swiper/bundle';
-import '/swiper/css/bundle';
+// import Swiper from '/swiper/bundle';
+// import '/swiper/css/bundle';
 
 // window.addEventListener('scroll', function(){
 //   const navbar = document.querySelector('.navbar');
@@ -59,7 +59,7 @@ import '/swiper/css/bundle';
 console.log("inicializando swiper");
 const swiper = new Swiper(".swiper", {
     autoplay: {
-        delay: 2000,
+        delay: 6000,
         disableOnInteraction: false
     },
     slidesPerView: 1,
