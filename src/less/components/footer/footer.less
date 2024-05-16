@@ -11,21 +11,82 @@ footer {
         max-width: 1600px;
         height: 80%;
         border-bottom: 3px solid #fff;
-        background-color: darkcyan;
+        //background-color: darkcyan;
+        display: flex;
 
-        // .left-footer {
+        
 
-        // }
+        .left-footer {
+            width: 60%;
+            height: 90%;
+            //background-color: aqua;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
 
-        // .right-footer {
+            .contain-img-footer {
+                
+                img {
+                    height: 150px;
+                }
+            }
 
-        // }
+            .contain-menu-footer {
+                
+                ul {
+                    display: flex;
+                    gap: 25px;
+
+                    li {
+                        
+                        a {
+                            font-size: 1.2rem;
+                            font-family: 'Jost', sans-serif;
+                            text-decoration: none;
+                            color: #fff;
+                            transition: all .2s ease-in-out 0s;
+
+                            &:hover {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-footer {
+            width: 40%;
+            height: 100%;
+            //background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            
+            .space {
+                height: 153px;
+            }
+            
+            p {
+                font-family: "Jost", sans-serif;
+                color: #fff;
+                text-align: right;
+                font-size: 1.3rem;
+            }
+        }
     }
 
     .contain-copyright {
         width: 100%;
         max-width: 1600px;
         height: 20%;
-        background-color: lime;
+
+        p {
+            font-family: "Jost", sans-serif;
+            color: #fff;
+            margin-top: 22px;
+            
+        }
     }
 }
