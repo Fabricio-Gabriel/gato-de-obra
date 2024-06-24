@@ -535,6 +535,7 @@ footer .contain-footer .left-footer .contain-menu-footer ul li a {
   text-decoration: none;
   color: #fff;
   transition: all 0.2s ease-in-out 0s;
+  box-sizing: border-box;
 }
 footer .contain-footer .left-footer .contain-menu-footer ul li a:hover {
   font-size: 1.3rem;
@@ -564,6 +565,110 @@ footer .contain-copyright p {
   font-family: "Jost", sans-serif;
   color: #fff;
   margin-top: 22px;
+}
+.formulario {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.formulario .h2-form {
+  margin-top: 70px;
+}
+.formulario .h2-form h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.formulario .contain-form {
+  width: 100%;
+  height: auto;
+  max-width: 814px;
+  border-radius: 24px;
+  border: 2px solid #F58634;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario .contain-form img {
+  height: 40px;
+}
+.formulario .contain-form .input-group {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  box-sizing: border-box;
+}
+.formulario .contain-form .input-group input[type='text'],
+.formulario .contain-form .input-group textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  border: 2px solid #F58634;
+  height: 48px;
+  border-radius: 8px;
+  padding: 1.3em;
+  box-sizing: border-box;
+  outline: none;
+}
+.formulario .contain-form .input-group textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.formulario .contain-form .input-group label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #F58634;
+  padding: 0.8em;
+}
+.formulario .contain-form .input-group input:focus ~ label,
+.formulario .contain-form .input-group input:valid ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #fff;
+}
+.formulario .contain-form .input-group input:focus,
+.formulario .contain-form .input-group input:valid {
+  border-color: #000000;
+}
+.formulario .contain-form .input-group textarea:focus ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #fff;
+}
+.formulario .contain-form .input-group textarea:focus {
+  border-color: #000000;
+}
+.formulario .contain-form .btn-form {
+  width: 100%;
+  background-color: #F58634;
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.formulario .contain-form .btn-form:hover {
+  background-color: #f39e61;
+  cursor: pointer;
 }
 body {
   width: 100vw;

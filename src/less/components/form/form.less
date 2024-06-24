@@ -1,0 +1,119 @@
+.formulario {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    //background-color: aqua;
+
+    .h2-form {
+        margin-top: 70px;
+        h2 {
+            font-family: "Jost", sans-serif;
+            font-weight: 500;
+            font-size: 3rem;
+        }
+    }
+
+    .contain-form {
+        width: 100%;
+        height: auto;
+        max-width: 814px;
+
+        border-radius: 24px;
+        border: 2px solid #F58634;
+        padding: 10px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 40px;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', sans-serif;
+            position: relative;
+            box-sizing: border-box;
+
+            input[type='text'], textarea {
+                width: 100%;
+                font-size: 1.2rem;
+                border: 2px solid #F58634;
+                height: 48px;
+                border-radius: 8px;
+                padding: 1.3em;
+                box-sizing: border-box;
+                outline: none;
+            }
+
+            textarea {
+                min-height: 60px;
+                resize: vertical;
+                
+            }
+
+            label {
+                font-size: 100%;
+                position: absolute;
+                left: 0;
+                top: 3px;
+                pointer-events: none;
+                transition: all 0.3s ease;
+                color: #F58634;
+                padding: 0.8em;
+            }
+
+
+            input:focus~label, input:valid~label {
+                transform: translateY(-50%) scale(.9);
+                margin: 0em;
+                margin-left: 1.3em;
+                padding: 0.4em;
+                background-color: #fff;
+            }
+
+            input:focus, input:valid{
+                border-color: rgb(0, 0, 0);
+            }
+
+            textarea:focus~label {
+                transform: translateY(-50%) scale(.9);
+                margin: 0em;
+                margin-left: 1.3em;
+                padding: 0.4em;
+                background-color: #fff;
+            }
+
+            textarea:focus{
+                border-color: rgb(0, 0, 0);
+            }
+        }
+
+        .btn-form {
+            width: 100%;
+            background-color: #F58634;
+            font-family: "Jost", sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            color: #fff;
+            height: 50px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            transition: all .2s ease-in-out 0s;
+
+            &:hover {
+                background-color: #f39e61;
+                cursor: pointer;
+            }
+        }
+    }
+}
